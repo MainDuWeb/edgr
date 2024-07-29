@@ -4,11 +4,11 @@ Theme Name: WordPress + Tailwind */
 
 
   html {
-    @apply bg-blanc-bg scroll-smooth
+    @apply bg-blanc-bg scroll-smooth 
   }
 
   body {
-    @apply font-body text-bleu-fonce text-lg md:text-xl 
+    @apply font-body text-bleu-fonce text-lg md:text-xl  bg-blanc-bg
   }
 
   main{
@@ -201,7 +201,7 @@ Theme Name: WordPress + Tailwind */
 
 
   .grid_accueil {
-    @apply grid sm2:grid-cols-2 gap-2 lg:grid-cols-3 xl:grid-cols-4 lg:gap-3  ;
+    @apply grid sm2:grid-cols-2 gap-2 md:grid-cols-2 lg:grid-cols-3  xxl:grid-cols-4 lg:gap-3 xl:gap-4 ;
   }
 
 /* Page Garderies---------------------------------------------- */

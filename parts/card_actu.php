@@ -57,15 +57,16 @@
                                 <div class="flex mb-4">
                                     <?php
                                     $categories = get_the_category();
-                                    if ( ! empty( $categories ) ) {
-                                        foreach ( $categories as $category ) {
+                                    if (!empty($categories)) {
+                                        foreach ($categories as $category) {
                                             // Get each category's slug and name
-                                            $category_slug = esc_html( $category->slug );
-                                            $category_name = esc_html( $category->name );
+                                            $category_slug = esc_html($category->slug);
+                                            $category_name = esc_html($category->name);
+                                            $category_link = get_category_link($category->term_id);
                                             ?>
-                                            <div class="px-3 py-0.5 mr-2 border-gray-300 category-bg rounded-md text-blanc-bg <?php echo $category_slug; ?>">
+                                            <a href="<?php echo esc_url($category_link); ?>" class="px-3 py-0.5 mr-2 border-gray-300 category-bg rounded-md text-blanc-bg <?php echo $category_slug; ?>">
                                                 <?php echo $category_name; ?>
-                                            </div>
+                                            </a>
                                             <?php
                                         }
                                     }

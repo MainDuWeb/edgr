@@ -22,7 +22,7 @@
         <div class=" pt-4 ">
                     <a href="<?= carbon_get_theme_option('lien_vdh'); ?>"
                         target="_blank">
-                        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/ville_de_herve.png" alt="logo">
+                        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/ville_de_herve.webp" alt="logo">
                     </a>
                     
         </div>

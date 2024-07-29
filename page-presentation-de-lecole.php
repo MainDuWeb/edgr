@@ -73,48 +73,37 @@
 
         </section>
 
-        <!-- Dans notre école -->
-        <section class=" bg-noir bg-cover bg-no-repeat rounded-2xl py-12 mb-12 text-small espaceur-section-presentation "> 
-            <div class="md:px-16 font-semibold text-noir"> 
-
-                <div class="">
-                    <div class="flex justify-around espaceur-disciplines "> 
-                        <p class="animate-pulse-1 md:text-9xl font-bold mt-2">Art</p>
-                        <p class="animate-pulse-2 md:text-4xl">Environnement</p>
-                    </div>
-
-                    <p class="animate-pulse-3 md:text-6xl espaceur-disciplines mt-2">Créativité</p>
-
-                <div class="flex justify-around espaceur-disciplines"> 
-                    <p class="animate-pulse-4 md:text-4xl">Intelligence Multiples</p>
-                    
-                </div>
-                <div class="text-blanc-bg text-center py-4">
-                    <p class="md:text-5xl">Dans notre école <br>il y a une place pour toutes les disciplines et intelligences </p>
-                </div>
-
-                   <p class="animate-pulse-5 md:text-7xl mt-2 ">Musique</p>
-                <div class="flex justify-around espaceur-disciplines"> 
-                 
-
-                    <p class="animate-pulse-6 md:text-3xl ">Eveil de l'enfant</p>
-                    <p class="animate-pulse-7 md:text-7xl mt-1">Découverte</p>
-                </div>
-
-                <div class="flex justify-around espaceur-disciplines"> 
-                    <p class="animate-pulse-8  md:text-4xl">Développement durable</p>
-                </div>
-                <p class="animate-pulse-9 md:text-5xl ml-8 ">Expériences</p>
-
-
+<!-- Dans notre école -->
+<section class="bg-noir bg-cover bg-no-repeat rounded-2xl py-12 mb-12 text-small espaceur-section-presentation">
+    <div class="md:px-16 font-semibold text-noir">
+        <div class="">
+            <div class="flex justify-around espaceur-disciplines">
+                <p class="animate-pulse-1 md:text-8xl font-bold mt-1">Art</p>
+                <p class="animate-pulse-2 md:text-3xl">Environnement</p>
             </div>
-        </section>
-
-
+            <p class="animate-pulse-3 md:text-5xl espaceur-disciplines mt-1">Créativité</p>
+            <div class="flex justify-around espaceur-disciplines">
+                <p class="animate-pulse-4 md:text-3xl">Intelligence Multiples</p>
+            </div>
+            <div class="text-blanc-bg text-center py-4">
+                <p class="md:text-3xl">Dans notre école <br>il y a une place pour toutes les disciplines et intelligences</p>
+            </div>
+            <p class="animate-pulse-5 md:text-6xl mt-2">Musique</p>
+            <div class="flex justify-around espaceur-disciplines">
+                <p class="animate-pulse-6 md:text-2xl">Eveil de l'enfant</p>
+                <p class="animate-pulse-7 md:text-6xl mt-1">Découverte</p>
+            </div>
+            <div class="flex justify-around espaceur-disciplines">
+                <p class="animate-pulse-8 md:text-3xl">Développement durable</p>
+            </div>
+            <p class="animate-pulse-9 md:text-xl ml-8">Expériences</p>
+        </div>
+    </div>
+</section>
 
 
         <!-- essayer, se tromper, Recommencer -->
-        <section class="espaceur-section-presentation   md:my-32"> 
+        <section class="espaceur-section-presentation md:my-32"> 
 
             <div class="bg-kids-school bg-no-repeat bg-cover w-full rounded-2xl  mb-4 h-36 md:mb-8 md:h-72  xl:h-96  reglage-bg  ">
                 <div class="lg:h-48"></div>
@@ -154,12 +143,12 @@
 
                     <img
                         class= ""
-                        src=" <?php echo get_template_directory_uri(); ?>/img/enfant_2.png"
+                        src=" <?php echo get_template_directory_uri(); ?>/img/enfant_2.webp"
                         alt="">
                     
                     <img
                         class= "rotate-12"
-                        src=" <?php echo get_template_directory_uri(); ?>/img/enfant_1.png"
+                        src=" <?php echo get_template_directory_uri(); ?>/img/enfant_1.webp"
                         alt="">
             
                 </div>
@@ -348,12 +337,12 @@
 
                     <img
                         class= ""
-                        src=" <?php echo get_template_directory_uri(); ?>/img/comm_1.png"
+                        src=" <?php echo get_template_directory_uri(); ?>/img/comm_1.webp"
                         alt="">
                     
                     <img
                         class= "rotate-12"
-                        src=" <?php echo get_template_directory_uri(); ?>/img/comm_2.png"
+                        src=" <?php echo get_template_directory_uri(); ?>/img/comm_2.webp"
                         alt="">
             
                 </div>
@@ -452,7 +441,7 @@
                     <div class="col-span-1"> 
                         <img 
                         class="  mx-auto"
-                        src="<?php echo get_template_directory_uri(); ?>/img/logo_rs.png" 
+                        src="<?php echo get_template_directory_uri(); ?>/img/logo_rs.webp" 
                         alt="Logo du réveil scolaire école"
                         >
                     </div>

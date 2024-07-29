@@ -2,13 +2,13 @@
 <?php get_header(); ?> 
 
    
-
        <!-- HERO -->
-        <section class="bg-hero bg-no-repeat bg-cover bg-top w-full h-4/5 md:min-h-full">
+        <section class="bg-hero bg-no-repeat bg-cover bg-top w-full h-4/5 md:min-h-full max-w-[2000px] mx-auto ">
 
+            <div class="xxl:py-24"></div>
             <div class="flex items-end ">
 
-                    <div class="bg-noir bg-opacity-70 mx-4 text-blanc-bg rounded-2xl mt-72 p-6 mb-12 ">
+                    <div class="bg-noir bg-opacity-70 mx-4 text-blanc-bg rounded-2xl mt-72 md:mt-96 p-6 mb-12 animate__animated animate__zoomIn">
                     
                         <h1 class=" text-4xl md:text-5xl font-semibold mb-2">
                                 <p class="text-xl font-normal">École communale de</p>
@@ -47,28 +47,25 @@
            
         </section>
 
-    <main class="mt-8 pt-8 ">
 
-        <section class= "">
+    <main class="mt-8 pt-8 max-w-[2000px] ">
+
+        <section class= "md:mx-20  ">
     
-            <h2 class="text-4xl font-semibold mt-8 mb-2 " > Nos dernières actualités </h2>
+            <h2 class="text-4xl font-semibold  mb-2  " > Nos dernières actualités </h2>
 
-
-
-                <div class=" grid_accueil  " >
+            <div class=" grid_accueil  " >
                 <?php if( have_posts() ) : while( have_posts() ) : the_post(); ?> 
                 
-                
-                    <article class="bg-blanc-gris mb-6 rounded-2xl w-full  ">
+                    <article class="bg-blanc-gris mb-6 rounded-2xl w-full max-w-96 md:max-w-full shadow-md shadow-[#1f4e6f31] hover:shadow-[#1f4e6f55] transition-all  ">
                           
-
                         <div class="w-auto">
-                        <?php the_post_thumbnail('actualite', ['class' => 'rounded-t-2xl h-48 md:48']); ?> 
+                            <?php the_post_thumbnail('actualite', ['class' => 'rounded-t-2xl h-48 ']); ?> 
                         </div>
 
                         <div class="p-4 text-sm">
                             
-                            <h3 class="text-2xl font-semibold pb-2">
+                            <h3 class="text-xl font-semibold pb-2">
                                 <?php
                                     $title = get_the_title();
                                     if (strlen($title) > 20) {
@@ -89,26 +86,28 @@
                             </div>
                                 
                      
-                                <div class="flex mb-4">
-                                    <?php
-                                    $categories = get_the_category();
-                                    if ( ! empty( $categories ) ) {
-                                        foreach ( $categories as $category ) {
-                                            // Get each category's slug and name
-                                            $category_slug = esc_html( $category->slug );
-                                            $category_name = esc_html( $category->name );
-                                            ?>
-                                            <div class="px-3 py-0.5 mr-2 border-gray-300 category-bg rounded-md text-blanc-bg <?php echo $category_slug; ?>">
-                                                <?php echo $category_name; ?>
-                                            </div>
-                                            <?php
-                                        }
+                            <div class="flex mb-4">
+                                <?php
+                                $categories = get_the_category();
+                                if (!empty($categories)) {
+                                    foreach ($categories as $category) {
+                                        // Get each category's slug and name
+                                        $category_slug = esc_html($category->slug);
+                                        $category_name = esc_html($category->name);
+                                        $category_link = get_category_link($category->term_id);
+                                        ?>
+                                        <a href="<?php echo esc_url($category_link); ?>" class="px-3 py-0.5 mr-2 border-gray-300 category-bg rounded-md text-blanc-bg <?php echo $category_slug; ?>">
+                                            <?php echo $category_name; ?>
+                                        </a>
+                                        <?php
                                     }
-                                    ?>
-                                </div>
+                                }
+                                ?>
+                            </div>
+
                                                 
 
-                            <div class="mb-4 font-light min-h-8 max-h-12">
+                            <div class="mb-4 font-light max-h-12 sm2:min-h-14 md:min-h-16  ">
                                 <?php the_excerpt(); ?>
                             </div>
 
@@ -117,7 +116,6 @@
                                 <a 
                                     href="<?php the_permalink(); ?>" 
                                     class=" btn-card  ">
-
                                     Lire la suite
                                 </a>
 
@@ -135,8 +133,7 @@
                 <p class=" text-sm mb-3">Consultez toutes les actualités de l’école et ne ratez plus aucun événement !   </p>
             </div>
             
-            <a 
-                href="<?php echo esc_url(get_category_link(get_category_by_slug('toutes-les-actus'))); ?>"
+            <a href="<?php echo esc_url(get_category_link(get_category_by_slug('toutes-les-actus'))); ?>"
                 class="btn btn-rose group">
                 
                 Toutes les actualités

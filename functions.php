@@ -67,10 +67,10 @@ add_action( 'carbon_fields_register_fields', function() {
 // Ajouter la prise en charge des images mises en avant
 add_theme_support('post-thumbnails');
 set_post_thumbnail_size( 1200, 400, true );
-add_image_size( 'actualite', 1200, 800, true);
+add_image_size( 'actualite', 1200, 400, true);
 add_image_size( 'equipe', 350, 400, true);
 add_image_size( 'detail-actu', 900, 400, true);
-add_image_size( 'infrastructure', 2000, 800, true);
+add_image_size( 'infrastructure', 1200, 400, true);
 
 function custom_excerpt_length($length) {
     return 20; 
@@ -112,6 +112,13 @@ function edgr_register_scripts_styles() {
         array(),
         null // Utiliser null pour ne pas ajouter de version
     ); 
+    wp_enqueue_style(
+        'animate',
+        "https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css",
+        array(),
+        null // animated
+    ); 
+
 
     // Enregistrer et ajouter les scripts
     // Version de développement

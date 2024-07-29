@@ -5,9 +5,35 @@
     <meta charset="<?php bloginfo('charset'); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <?php wp_head(); ?>
+
+
 </head>
 
-<body class="bg-bg-confeti bg-no-repeat bg-cover "<?php body_class(); ?>>
+<body <?php body_class(); ?>>
+    <style>
+        .collapsed {
+            display: none;
+        }
+        .expanded {
+            display: block;
+        }
+
+        .loader {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            display: flex; 
+            justify-content: center;
+            align-items: center;
+        }
+
+        .fondu-out {
+            opacity: 0;
+            transition: opacity 0.4s ease-out;
+        }
+
+    </style>
+
     <?php wp_body_open(); ?>
 
     <header class="bg-nav text-text-nav w-full shadow-md z-50 fixed top-0">
@@ -109,16 +135,18 @@
         </nav>
     </header>
 
-    <style>
-        .collapsed {
-            display: none;
-        }
-        .expanded {
-            display: block;
-        }
+    <div class="loader ">
 
-    </style>
-    
+        <div class="w-full flex justify-center items-center ">
+
+            <div class="animate-pulse">
+                <img 
+                    src="<?php echo esc_url(get_template_directory_uri()); ?>/img/logo_ecole.webp" 
+                    alt="logo">
+            </div>
+
+        </div>
+    </div>
 
     <?php wp_footer(); ?>
 

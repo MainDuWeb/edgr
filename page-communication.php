@@ -14,22 +14,22 @@
             <section class="hidden md:block md:w-3/4  "> 
                 <img
                     class= ""
-                    src=" <?php echo get_template_directory_uri(); ?>/img/comm_1.png"
+                    src=" <?php echo get_template_directory_uri(); ?>/img/comm_1.webp"
                     alt="">
                 
                 <img
                     class= "rotate-12"
-                    src=" <?php echo get_template_directory_uri(); ?>/img/comm_2.png"
+                    src=" <?php echo get_template_directory_uri(); ?>/img/comm_2.webp"
                     alt="">
 
                 <img
                     class= ""
-                    src=" <?php echo get_template_directory_uri(); ?>/img/comm_3.png"
+                    src=" <?php echo get_template_directory_uri(); ?>/img/comm_3.webp"
                     alt="">
 
                 <img
                     class= "rotate-12"
-                    src=" <?php echo get_template_directory_uri(); ?>/img/comm_4.png"
+                    src=" <?php echo get_template_directory_uri(); ?>/img/comm_4.webp"
                     alt="">
             </section>
 
