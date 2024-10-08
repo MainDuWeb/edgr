@@ -8,7 +8,7 @@ Theme Name: WordPress + Tailwind */
   }
 
   body {
-    @apply font-body text-bleu-fonce text-lg md:text-xl  bg-blanc-bg
+    @apply font-body text-bleu-fonce text-base  bg-blanc-bg
   }
 
   main{
@@ -53,7 +53,7 @@ Theme Name: WordPress + Tailwind */
   /* Menu */
 
   .menu{ 
-    @apply hidden md:flex gap-4 justify-end  items-center  md:text-lg font-medium; 
+    @apply hidden md:flex gap-4 justify-end  items-center  md:text-base font-medium; 
   }
 
   .item-menu {

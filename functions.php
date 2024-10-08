@@ -63,7 +63,6 @@ add_action( 'carbon_fields_register_fields', function() {
         
 });
 
-
 // Ajouter la prise en charge des images mises en avant
 add_theme_support('post-thumbnails');
 set_post_thumbnail_size( 1200, 400, true );
@@ -119,16 +118,8 @@ function edgr_register_scripts_styles() {
         null // animated
     ); 
 
-
     // Enregistrer et ajouter les scripts
     // Version de développement
-    wp_enqueue_script(
-        'lucide-dev',
-        'https://unpkg.com/lucide@latest/dist/umd/lucide.js',
-        array(), // Dépendances du script (si aucune, laisser un tableau vide)
-        null, // Utiliser null pour ne pas ajouter de version
-        true // Chargé dans le pied de page
-    );
 }
 
 add_action('wp_enqueue_scripts', 'edgr_register_scripts_styles');

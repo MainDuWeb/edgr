@@ -1,11 +1,13 @@
 <?php get_header(); ?>
 
+
+
 <main class=""> 
 
     <!-- Notre école -->
         <section class="espaceur-section-presentation "> 
             <img 
-                class="w-full rounded-2xl"
+                class="w-full rounded-2xl max-h-[600px]"
                 src="<?php echo get_template_directory_uri(); ?>/img/ecole.webp" 
                 alt="Logo de l'école">
 
@@ -78,17 +80,19 @@
     <div class="md:px-16 font-semibold text-noir">
         <div class="">
             <div class="flex justify-around espaceur-disciplines">
-                <p class="animate-pulse-1 md:text-8xl font-bold mt-1">Art</p>
+                <p class="animate-pulse-1 md:text-8xl font-bold pt-1">Art</p>
                 <p class="animate-pulse-2 md:text-3xl">Environnement</p>
             </div>
-            <p class="animate-pulse-3 md:text-5xl espaceur-disciplines mt-1">Créativité</p>
+
+
             <div class="flex justify-around espaceur-disciplines">
                 <p class="animate-pulse-4 md:text-3xl">Intelligence Multiples</p>
+                            <p class="animate-pulse-3 md:text-5xl espaceur-disciplines pt-1">Créativité</p>
             </div>
             <div class="text-blanc-bg text-center py-4">
                 <p class="md:text-3xl">Dans notre école <br>il y a une place pour toutes les disciplines et intelligences</p>
             </div>
-            <p class="animate-pulse-5 md:text-6xl mt-2">Musique</p>
+            <p class="animate-pulse-5 md:text-6xl pt-2">Musique</p>
             <div class="flex justify-around espaceur-disciplines">
                 <p class="animate-pulse-6 md:text-2xl">Eveil de l'enfant</p>
                 <p class="animate-pulse-7 md:text-6xl mt-1">Découverte</p>

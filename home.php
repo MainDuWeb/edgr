@@ -63,7 +63,7 @@
                             <?php the_post_thumbnail('actualite', ['class' => 'rounded-t-2xl h-48 ']); ?> 
                         </div>
 
-                        <div class="p-4 text-sm">
+                        <div class="p-4 ">
                             
                             <h3 class="text-xl font-semibold pb-2">
                                 <?php
@@ -130,7 +130,7 @@
 
 
             <div class="">
-                <p class=" text-sm mb-3">Consultez toutes les actualités de l’école et ne ratez plus aucun événement !   </p>
+                <p class=" mb-3">Consultez toutes les actualités de l’école et ne ratez plus aucun événement !   </p>
             </div>
             
             <a href="<?php echo esc_url(get_category_link(get_category_by_slug('toutes-les-actus'))); ?>"

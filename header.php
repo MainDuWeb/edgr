@@ -5,11 +5,10 @@
     <meta charset="<?php bloginfo('charset'); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <?php wp_head(); ?>
-
-
 </head>
 
-<body <?php body_class(); ?>>
+<body class=" "<?php body_class(); ?>>
+
     <style>
         .collapsed {
             display: none;
@@ -29,20 +28,19 @@
 
         .fondu-out {
             opacity: 0;
-            transition: opacity 0.4s ease-out;
+            transition: opacity 0.3s ease-out;
         }
 
     </style>
 
     <?php wp_body_open(); ?>
+<!--  top-0!! -->
+    <header class="bg-nav text-text-nav w-full shadow-md z-50 fixed">
 
-    <header class="bg-nav text-text-nav w-full shadow-md z-50 fixed top-0">
-        <nav >
+        <nav>
             <!-- Menu desktop -->
-            <div class="hidden mx-8 md:flex justify-between py-2">
+            <div class="hidden mx-8 md:flex justify-between py-1">
      
-
-              
                 <a href="<?php echo esc_url(home_url('/')); ?>">
                     <img class="w-12" src="<?php echo esc_url(get_template_directory_uri()); ?>/img/logo_ecole.webp" alt="">
                 </a>
@@ -132,7 +130,9 @@
                     </div>
                 </div>
             </div>
+
         </nav>
+
     </header>
 
     <div class="loader ">
